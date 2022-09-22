@@ -1,0 +1,302 @@
+* {
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Aref Ruqaa Ink', serif;
+    background-color: #dad7cd;
+    padding-left: 5px;
+    padding-right: 20px;
+    z-index: 15;
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+}
+
+.nav-name h1 {
+    padding-left: 20px;
+}
+
+.nav-name h1 :nth-child(1) {
+    color: #52796f;
+}
+
+.nav-name img {
+    border-radius: 50px;
+}
+
+.nav-email,
+.nav-email a {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 3%;
+    color: black;
+}
+
+.nav-email a {
+    padding-bottom: 2%;
+}
+
+.burger-email,
+.nav-email {
+    display: flex;
+    align-items: center;
+}
+
+
+.burger-icon {
+    cursor: pointer;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.burger-icon div {
+    width: 40px;
+    border-top: solid 2px black;
+}
+
+.burger-icon :nth-child(2) {
+    width: 30px;
+}
+
+.intro div {
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+
+.intro h1 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.intro h3 {
+    margin: 0px;
+}
+
+.std.info {
+    margin: 0px;
+    border: 0px;
+
+}
+
+
+.intro button {
+    width: 200px;
+    height: 50px;
+    margin: 10px 10px 0 0;
+    font-size: 15px;
+    background-color: #cad2c5;
+    border-color: #cad2c5;
+    border-radius: 10px;
+    color: black;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #52796fc9;
+    height: 450px;
+    flex-wrap: wrap;
+
+}
+
+
+.intro img {
+    height: 400px;
+    border-radius: 400px;
+    box-shadow: 20px 10px 50px 5px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-info {
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+.interests {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.int-info {
+    width: calc(60% + 10px);
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-info progress {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+progress {
+    border-radius: 7px;
+    width: 80%;
+    height: 22px;
+
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+    background-color: #c0d5af;
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #52796f;
+    border-radius: 7px;
+}
+
+.ias {
+    background-image: url(img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.ias section {
+    background-color: #dad7cdd6;
+}
+
+.about {
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.interests {
+    padding-bottom: 1%;
+}
+
+.skills {
+    padding-top: 1%;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+.social-media {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .intro {
+        flex-direction: column;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .nav-email :nth-child(2) {
+        display: none;
+    }
+
+    .intro {
+        height: 90vh;
+        text-align: center;
+    }
+
+    .portfolioopen {
+        display: none;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro h2 {
+        font-size: 25px;
+
+    }
+
+    .intro img {
+        height: 300px;
+    }
+
+    .burger-icon {
+        padding-left: 15px;
+    }
+
+    .about,
+    .interests,
+    .skills {
+        flex-direction: column;
+
+    }
+
+    .about-info,
+    .int-info,
+    .skills-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .about h1,
+    .interests h1,
+    .skills h1 {
+        text-decoration: underline;
+    }
+}

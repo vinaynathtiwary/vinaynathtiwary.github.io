@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay's Portfolio</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="burger-pop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="main">
+
+    <nav>
+        <div class="nav-name">
+            <img src="img2.jpg" height="50" alt="image">
+            <h1><span>VINAY'S</span><span> PORTFOLIO</span></h1>
+        </div>
+        <div class="burger-email">
+            <span class="nav-email">
+                <a href="mailto:vinaynathtiwary@gmail.com"><img src="email.png" height="35px" alt="email-icon"></a>
+                <a href="mailto:vinaynathtiwary@gmail.com" target="_blank">vinaynathtiwary@gmail.com</a>
+            </span>
+            <div onclick="show()" class="burger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="pop-nav" class="hide">
+        <div class="burger-pop-main">
+            <div onclick="hide()" class="cross">&#10761;</div>
+            <p><a href="index.html">🏠HOME</a></p>
+            <p><a href="education.html">📑EDUCATION</a></p>
+            <p><a href="certifications.html">📜CERTIFICATIONS</a></p>
+            <p><a href="project.html">💻PROJECTS</a></p>
+        </div>
+    </section>
+
+    <main>
+        <section class="intro">
+            <div class="std-info">
+                <h1>VINAY NATH TIWARY</h1>
+                <h2>STUDENT</h2>
+                <h3>BE Computer Science Engineering <br> CHANDIGADH UNIVERSITY, MOHALI PANJAB</h3>
+                <p>Design | Develop | Deploy</p>
+                <button class="portfolioopen" type="button" onclick="show()">OPEN PORTFOLIO</button>
+                <a id="download-button" href="img2.jpg" download></a>
+                <button class="resume-download" type="button" onclick="downloadresume()">DOWNLOAD RESUME</button>
+            </div>
+            <div class="intro-img">
+                <img src="img2.jpg" alt="img2">
+            </div>
+
+        </section>
+
+        <div class="ias">
+            <div>
+                <section class="about">
+                    <div>
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="about-info">
+                        <h2>Hello, I’m a Frontend Developer from Dhanbad, Jharkhand. Currently I am pursuing a
+                            Bachelor's degree in Computer Science And Engineering from Chandigadh University, Mohali,
+                            Panjab.
+                        </h2>
+                        <p>
+                            I am able to handle multiple tasks on a daily basis.<br>
+                            I use creative approach to solve problems.<br>
+                            I am a reliable person who is good at time management.<br>
+                            I am always curious and eager to learn new skills.<br>
+                            I have experience working as part of a team and individually.
+                        </p>
+                    </div>
+                </section>
+                <section class="interests">
+                    <div>
+                        <h1>My Interests</h1>
+                    </div>
+                    <div class="int-info">
+                        Love Working on Cool Projects and problem solving Ideas with new and emerging Development
+                        technologies. Interest in Web Development.
+
+                    </div>
+                </section>
+
+                <section class="skills">
+                    <div>
+                        <h1>My Skills</h1>
+                    </div>
+                    <div class="skills-info">
+                        <label for="file">HTML</label>
+                        <progress id="file" value="70" max="100"> 75% </progress>
+                        <label for="file">CSS</label>
+                        <progress id="file" value="62" max="100"> 62% </progress>
+                        <label for="file">JAVA SCRIPT</label>
+                        <progress id="file" value="10" max="100"> 10% </progress>
+                        <label for="file">C</label>
+                        <progress id="file" value="65" max="100"> 65% </progress>
+                        <label for="file">C++</label>
+                        <progress id="file" value="61" max="100"> 61% </progress>
+                        <label for="file">PHOTO/VIDEO EDITING</label>
+                        <progress id="file" value="80" max="100"> 80% </progress>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/vinay-nath-tiwary-175624210/" target="_blank">
+                <img src="linkedin.png" height="50px" alt="linkedin">
+            </a>
+            <a href="https://www.hackerrank.com/vinaynathtiwary" target="_blank">
+                <img src="hackerrank.png" height="50px" alt="hackerrank">
+            </a>
+            <a href="https://github.com/vinaynathtiwary" target="_blank">
+                <img src="github.png" height="50px" alt="github">
+            </a>
+            <a href="https://www.facebook.com/vinaynathtiwary" target="_blank">
+                <img src="facebook.png" height="50px" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/vinay_nath_tiwary/" target="_blank">
+                <img src="instagram.png" height="50px" alt="instagram">
+            </a>
+            <a href="https://twitter.com/vinaynathtiwary" target="_blank">
+                <img src="twitter.png" height="50px" alt="twitter">
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
