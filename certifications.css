@@ -75,6 +75,25 @@
     height: 400px;
 }
 
+.about-asrd {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.asrd {
+    width: 30%;
+}
+
+.asrdimg {
+    width: 40%;
+
+}
+
+.asrdimg img {
+    height: 400px;
+}
+
 .about-dawp {
     display: flex;
     justify-content: space-around;
@@ -181,6 +200,30 @@
         width: 90vw;
     }
 
+    .about-asrd {
+        flex-direction: column;
+
+    }
+
+    .asrd,
+    .asrd img {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .asrd {
+        line-break: anywhere;
+    }
+
+    .asrdimg img {
+        height: 250px;
+
+    }
+
+    .asrdimg {
+        width: 90vw;
+    }
+
 
     .about-dawp {
         flex-direction: column;
@@ -226,7 +269,8 @@
     .htmlimg,
     .dawpimg,
     .veimg,
-    .cssimg {
+    .cssimg,
+    .asrdimg {
         width: 90%;
         display: flex;
         justify-content: center;
@@ -235,7 +279,8 @@
     .htmlimg img,
     .dawpimg img,
     .veimg img,
-    .cssimg {
+    .cssimg img,
+    .asrdimg img {
         padding-top: 20px;
     }
 
