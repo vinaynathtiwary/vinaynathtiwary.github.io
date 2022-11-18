@@ -1,5 +1,9 @@
 /* education */
 
+body {
+    background-color: #DEF5E5;
+}
+
 .edu-nav {
     background-color: #52796f;
     padding-left: 5px;
@@ -45,49 +49,40 @@
     background-color: rgba(0, 0, 0, 0.626);
 }
 
-.about-degree {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.degree {
-    width: 30%;
-}
-
-.cuimg {
-    width: 40%;
-}
-
-.cuimg img {
-    border-radius: 20px;
-    height: 300px;
-}
-
+.about-degree,
 .about-school {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+
+.about-degree h1,
+.about-school h1 {
+    text-decoration: underline;
+}
+
+
+
+.degree,
 .school {
-    width: 30%;
+    width: 100%;
+    text-align: center;
 }
 
+.cuimg,
 .svmimg {
-    width: 40%;
-
-
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.cuimg img,
 .svmimg img {
-    border-radius: 20px;
-    height: 300px;
+    height: 350px;
+    border-radius: 10px;
 }
-
-
-
-
 
 @media screen and (max-width:900px) {
 
@@ -106,13 +101,13 @@
 
     .degree,
     .school {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
     .cuimg,
     .svmimg {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }

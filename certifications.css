@@ -1,3 +1,8 @@
+body {
+    background-color: #DEF5E5;
+}
+
+
 .certi-main {
     height: 50vh;
     padding-top: 2%;
@@ -151,6 +156,13 @@
     height: 365px;
 }
 
+.html,
+.css,
+.c,
+.asrd,
+.dawp a {
+    line-break: anywhere;
+}
 
 @media screen and (max-width:900px) {
 
