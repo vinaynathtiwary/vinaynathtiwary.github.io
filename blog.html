@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="" class="logo">Vinay Tripathi</a>
+      <div class="navs">
+        <a href="javascript:void(0)" class="close"
+          ><i class="fa-solid fa-close"></i
+        ></a>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html" style="color: #0033ff">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="">Hire Me</a>
+      </div>
+      <a href="javascript:void(0)" class="bars"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
+    </nav>
+    <section>
+      <div class="resume-section">
+        <p class="experience">VISIT MY BLOG AND KEEP YOUR FEEDBACK</p>
+        <p class="my-resume-title">My Blog</p>
+        <div class="blog-img-container">
+          <div class="img"><img src="images/01.jpg" alt="" /></div>
+          <div class="img"><img src="images/03.jpg" alt="" /></div>
+          <div class="img"><img src="images/05.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let bar = document.getElementsByClassName("bars");
+      let navs = document.getElementsByClassName("navs");
+      let close = document.getElementsByClassName("close");
+      bar[0].addEventListener("click", comming);
+      close[0].addEventListener("click", going);
+      function comming() {
+        navs[0].style.right = "80px";
+      }
+      function going() {
+        navs[0].style.right = "-120px";
+      }
+    </script>
+  </body>
+</html>
