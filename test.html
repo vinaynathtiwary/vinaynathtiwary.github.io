@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Changer</title>
+    <style>
+      /* Optional: Add some styles for better presentation */
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML elements for displaying images and button -->
+    <img
+      onclick="changeImage()"
+      id="imageDisplay"
+      src="portfolioAssets/darkMood.png"
+      alt="Image 1"
+    />
+
+    <script>
+      // JavaScript code for image change logic
+      var currentImageIndex = 1;
+      var totalImages = 2; // Change this to the total number of images you have
+
+      function changeImage() {
+        currentImageIndex = (currentImageIndex % totalImages) + 1;
+        var imagePath =
+          "portfolioAssets/" +
+          (currentImageIndex === 1 ? "darkMood.png" : "lightMood.png");
+        document.getElementById("imageDisplay").src = imagePath;
+      }
+    </script>
+  </body>
+</html>

@@ -3,137 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="contact.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <nav>
-      <a href="" class="logo">Vinay Tripathi</a>
-      <div class="navs">
-          <a href="javascript:void(0)" class="close"><i class="fa-solid fa-close"></i></a>
-          <a href="index.html" >Home</a>
-          <a href="features.html" >Features</a>
-          <a href="resume.html" >Resume</a>
-          <!-- <a href="blog.html" >Blog</a> -->
-          <a href="contact.html" style="color:#0033ff" >Contact</a>
-          <a href="">Hire Me</a>
-      </div>
-      <a href="javascript:void(0)" class="bars"><i class="fa-solid fa-bars"></i></a>
-  </nav>
+  <body class="mainBg">
     <section>
-      <div class="contact-section">
-           <p class="contact-with-us">CONTACT WITH US</p>
-           <p class="contact">Contact</p>
-           <div class="hand-shake-and-form-container">
-                  <div class="hand-shake">
-                    <img src="images/Saly-31.png" alt="">
-                    <p class="name content">Vinay Tripathi</p>
-                    <p class="position content">Web Developer</p>
-                    <p class="freelancer content">Currently available for freelance work. Connect with me via this form or call in to my account.</p>
-                    <p class="phone content">Phone: +91 7870162890
-                      </p>
-                    <p class="number">
-                    Email: vinaynathtiwary@gmail.com
-                    </p>
-                    <div class="social-container">
-                       <p>Find With Me</p> 
-                       <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                       <a href="https://www.linkedin.com/in/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-                       <a href="https://github.com/"><i class="fa-solid fa-code-compare"></i></a>
-                   </div>
-                  </div>
-                  <form>
-                    <div class="clns" id="cln1">
-                      <div class="name">
-                        
-                        <br>
-                        <br>
-                      
-                        <label for="name">YOUR NAME</label>
-                  
-                        <br>
-                        <br>
-                        <input type="text" id="name">
-                      </div>
-                      <div class="number">
-                        <br>
-                        <br>
-                        
-                        <label for="number">YOUR NUMBER</label>
-                      
-                        <br>
-                        <br>
-
-                        <input type="text" id="number">
-                      </div>
-                    </div>
-                    <div class="clns" id="cln2">
-                      <br>
-                      
-                      <br>
-                      <label for="email">EMAIL</label>
-                    
-                      <br>
-                      <br>
-                      <input type="email" id="email">
-                    </div>
-                    <div class="clns" id="cln3">
-                      
-                      <br>
-                      <br>
-                      <label for="subject">SUBJECT</label>
-                      <br>
-                      
-                      <br>
-                      <input type="text" id="subject">
-                    </div>
-                    <div class="clns" id="cln4">
-                      
-                      <br>
-                      <br>
-                      <label for="subject">YOUR MESSAGE</label>
-                      <br>
-                      <br>
-                      
-                      <input type="text" name="" id="message">
-                      <br>
-                      <br>
-                    </div>
-                    <div class="clns" id="cln5">
-                      <br>
-                      <br>
-                      
-                      <input type="submit" name="" id="" value="SUBMIT">
-
-                    </div>
-                  </form>
-           </div>
-          <hr>
-        
-        
-      </div> 
+      <div>
+        <nav class="navBg">
+          <div>
+            <h1>VINAY'S PORTFOLIO</h1>
+          </div>
+          <div class="darkLightMood">
+            <img
+              onclick="lightMood()"
+              onclick="changeImage()"
+              id="imageDisplay"
+              src="portfolioAssets/lightMood.png"
+              alt="Image 1"
+            />
+          </div>
+        </nav>
+      </div>
     </section>
-    <script>
-      let bar=document.getElementsByClassName("bars")
-      let navs=document.getElementsByClassName("navs")
-      let close=document.getElementsByClassName("close")
-      bar[0].addEventListener("click",comming)
-      close[0].addEventListener("click",going)
-      function comming(){
-          navs[0].style.right="80px";
-         
-         
-      }
-      function going(){
-          navs[0].style.right="-120px";  
-            
-          
-      }
 
-  </script>
+    <section class="mainContainer">
+      <div class="leftMainContainer">
+        <div class="leftMainContainerImg">
+          <img src="portfolioAssets/myImg.jpg" alt="" />
+          <h2>Vinay Nath Tiwary</h2>
+          <p>web-developer</p>
+          <div class="socialMedia">
+            <a href=""><img src="portfolioAssets/facebook.gif" alt="" /></a>
+            <a href=""><img src="portfolioAssets/instagram.gif" alt="" /></a>
+            <a href=""><img src="portfolioAssets/twitter.gif" alt="" /></a>
+            <a href=""><img src="portfolioAssets/linkedin.gif" alt="" /></a>
+          </div>
+        </div>
+        <div class="personalDetails">
+          <div class="details">
+            <div><img src="portfolioAssets/call.gif" alt="" /></div>
+            <div>
+              <p>Phone</p>
+              <h5>+91 7870162890</h5>
+            </div>
+          </div>
+          <div class="details">
+            <div><img src="portfolioAssets/email.gif" alt="" /></div>
+            <div>
+              <p>E-Mail</p>
+              <h5>vinaynathtiwary@gmail.com</h5>
+            </div>
+          </div>
+          <div class="details">
+            <div><img src="portfolioAssets/location.gif" alt="" /></div>
+            <div>
+              <p>Location</p>
+              <h5>Dhanbad, Jharkhand</h5>
+            </div>
+          </div>
+          <div class="details">
+            <div><img src="portfolioAssets/birthday.gif" alt="" /></div>
+            <div>
+              <p>Birthday</p>
+              <h5>05-01-2004</h5>
+            </div>
+          </div>
+        </div>
+        <div class="button"><button>Download Resume</button></div>
+      </div>
+      <div>
+        <div class="rightMainTopContainer">
+          <div>
+            <a href="index.html">
+              <img src="portfolioAssets/home.gif" alt="" />
+              <h6>Home</h6>
+            </a>
+          </div>
+          <div>
+            <a href="project.html">
+              <img src="portfolioAssets/work.gif" alt="" />
+              <h6>Projects</h6>
+            </a>
+          </div>
+
+          <div>
+            <a href="certification.html">
+              <img src="portfolioAssets/document.gif" alt="" />
+              <h6>Certification</h6>
+            </a>
+          </div>
+          <div>
+            <a href="contact.html">
+              <img src="portfolioAssets/contact.gif" alt="" />
+              <h6>Contact</h6>
+            </a>
+          </div>
+        </div>
+        <div class="rightMainContainer">
+          <div class="about">
+            <div class="aboutTag">
+              <h1>Contact us</h1>
+              <div class="aboutLine"></div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scrypt.js"></script>
   </body>
 </html>
