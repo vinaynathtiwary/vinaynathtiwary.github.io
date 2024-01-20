@@ -171,14 +171,25 @@ h5 {
 }
 
 .rightMainTopContainer div {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(254, 254, 254);
   width: 100px;
-  height: 100px;
+  height: 40px;
   margin: 5px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  gap: 0px;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .rightMainTopContainer div img {
@@ -319,40 +330,33 @@ h5 {
     width: 30px;
   }
 
-  /* .personalDetails {
-    background-color: rgb(252, 255, 248);
-    height: 400px;
-    width: 80%;
-    margin-top: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  } */
   .rightMainTopContainer {
     width: 100%;
     margin: 20px 0;
-    height: auto;
+    height: 150px;
     margin-left: 10px;
   }
 
   .rightMainTopContainer div {
     background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 10px;
-    width: 20px;
-    border-radius: 10px;
-  }
-
-  .rightMainTopContainer div {
-    height: 80%;
-    width: 80%;
+    height: 30px;
+    width: 80px;
     margin: 10px 0;
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .rightMainTopContainer div img {
+    margin-top: 15px;
+  }
+
+  .rightMainTopContainer div h6 {
+    font-size: 12px;
   }
 
   .img1,
@@ -374,7 +378,7 @@ h5 {
 
   .button button {
     height: 50px;
-    width: 100%;
+    width: 200px;
     font-size: 15px;
   }
 
@@ -383,32 +387,37 @@ h5 {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 10px;
+    padding-bottom: 20px;
   }
 
   .aboutTag h1 {
-    font-size: 24px;
+    font-size: 35px;
     margin-top: 10px;
+    margin-left: -30px;
+    margin-bottom: 0px;
   }
 
   .about p {
-    font-size: 15px;
-    padding-left: 10px;
+    font-size: 20px;
+    padding-left: 35px;
     padding-right: 10px;
-    text-align: left;
+    text-align: center;
   }
 
   .aboutLine {
-    width: 50px;
-    margin: 10px;
+    width: 120px;
+    margin: 0px;
   }
 
   .skills {
     flex-direction: column;
     height: auto;
+    margin-top: 30px;
   }
 
   .skills div {
     margin: 0px;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
 }
